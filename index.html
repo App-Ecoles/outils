@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Outils Pédagogiques</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; display: flex; flex-direction: column; align-items: center; }
+        header { background: #2563eb; color: white; width: 100%; padding: 40px 0; text-align: center; margin-bottom: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.2rem; }
+        p { opacity: 0.9; margin-top: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; width: 90%; padding-bottom: 50px; }
+        
+        .card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); transition: transform 0.2s; border-top: 6px solid #2563eb; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 { margin-top: 0; color: #1e293b; }
+        .card p { color: #64748b; font-size: 0.95rem; line-height: 1.5; }
+        
+        .btn { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 12px; border-radius: 8px; text-align: center; font-weight: bold; margin-top: 20px; }
+        .btn:hover { background: #1d4ed8; }
+        
+        .card.loto { border-top-color: #e67e22; }
+        .card.loto .btn { background: #e67e22; }
+        .card.lecture { border-top-color: #10b981; }
+        .card.lecture .btn { background: #10b981; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ma Boîte à Outils d'Enseignant</h1>
+    <p>Des outils simples, gratuits et respectueux de vos données.</p>
+</header>
+
+<div class="grid">
+    <div class="card loto">
+        <div>
+            <h2>🎯 Générateur de Loto</h2>
+            <p>Créez des grilles personnalisées (nombres, syllabes, mots) pour toute la classe en un clic. Chaque fiche est unique !</p>
+        </div>
+        <a href="https://App-Ecoles.github.io/grilles-loto/" class="btn">Ouvrir l'outil</a>
+    </div>
+
+    <div class="card lecture">
+        <div>
+            <h2>📝 Grilles de Lecture</h2>
+            <p>Générez des fiches de lecture ou de fluence avec calcul automatique du nombre de syllabes. Prêt pour l'impression.</p>
+        </div>
+        <a href="https://App-Ecoles.github.io/grille-mots-lecture/" class="btn">Ouvrir l'outil</a>
+    </div>
+
+    <div class="card" style="border-top-color: #94a3b8; opacity: 0.7;">
+        <div>
+            <h2>🚀 Prochainement...</h2>
+            <p>De nouveaux outils arrivent bientôt pour vous aider à gérer votre classe au quotidien.</p>
+        </div>
+        <span class="btn" style="background: #94a3b8; cursor: default;">À venir</span>
+    </div>
+</div>
+
+</body>
+</html>
